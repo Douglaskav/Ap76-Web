@@ -17,9 +17,9 @@ mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 const SearchPage = () => {
   const mapContainer = useRef(null);
   const map = useRef(null);
-  const [lng, setLng] = useState(-5.192103);
-  const [lat, setLat] = useState(-37.3477149);
-  const [zoom, setZoom] = useState(14);
+  const [lng] = useState(-5.192103);
+  const [lat] = useState(-37.3477149);
+  const [zoom] = useState(14);
 
   useEffect(() => {
     if (map.current) return; // initialize map only once
