@@ -1,12 +1,11 @@
-import Router from "./routes";
+import { Home } from "./screens/Home";
 
 function App() {
   return (
     <div className="App">
-      <Router />
+      <Home />
     </div>
   );
 }
 
 export default App;
-
