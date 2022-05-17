@@ -2,7 +2,7 @@ import LogoImage from "../../assets/Logo.svg";
 
 export function Header() {
   return (
-    <navbar className="flex items-center justify-between mx-12 my-8">
+    <header className="flex items-center justify-between mx-12 my-8">
       <div className="flex items-center">
         <img
           src={LogoImage}
@@ -57,6 +57,6 @@ export function Header() {
           Login
         </button>
       </div>
-    </navbar>
+    </header>
   );
 }

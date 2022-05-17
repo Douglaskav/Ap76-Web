@@ -10,7 +10,7 @@ export function FeaturedProperties() {
       </h1>
 
       <div className="w-full flex flex-row flex-nowrap items-center justify-center mt-8">
-        <div class="border rounded w-[38%] mr-6">
+        <div className="border rounded w-[38%] mr-6">
           <div>
             <img
               src={ImovelImage1}
@@ -34,7 +34,7 @@ export function FeaturedProperties() {
           </div>
         </div>
 
-        <div class="border rounded w-[38%] ml-6">
+        <div className="border rounded w-[38%] ml-6">
           <div>
             <img
               src={ImovelImage2}
@@ -58,8 +58,10 @@ export function FeaturedProperties() {
           </div>
         </div>
       </div>
-      
-      <button className="min-w-[270px] py-3 px-8 mt-6 bg-transparent border-2 border-secondary-300 text-secondary-300 font-medium text-center rounded text-sm hover:bg-secondary-300 hover:text-[#fff] transition-colors">Ver mais imóveis</button>
+
+      <button className="min-w-[270px] py-3 px-8 mt-6 bg-transparent border-2 border-secondary-300 text-secondary-300 font-medium text-center rounded text-sm hover:bg-secondary-300 hover:text-[#fff] transition-colors">
+        Ver mais imóveis
+      </button>
     </div>
   );
 }

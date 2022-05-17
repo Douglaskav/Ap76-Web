@@ -21,42 +21,42 @@ export function Footer() {
         <ul className="mr-4">
           <h4 className="text-xl font-medium text-logo_color-500">Produto</h4>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">Inicio</a>
+            <a href="https://github.com/Douglaskav" alt="home page">Inicio</a>
           </li>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">Procurar casa</a>
+            <a href="https://www.github.com/Douglaskav" alt="search/house">Procurar casa</a>
           </li>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">Procurar Ap</a>
+            <a href="https://www.github.com/Douglaskav" alt="Search/ap">Procurar Ap</a>
           </li>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">Sóbre nós</a>
+            <a href="https://www.github.com/Douglaskav" alt="about-us">Sóbre nós</a>
           </li>
         </ul>
 
         <ul className="mx-4">
           <h4 className="text-xl font-medium text-logo_color-500">Empresa</h4>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">Termos de uso</a>
+            <a href="https://www.github.com/Douglaskav" alt="terms">Termos de uso</a>
           </li>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">Politica de uso</a>
+            <a href="https://www.github.com/Douglaskav" alt="terms of use">Politica de uso</a>
           </li>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">Carreiras</a>
+            <a href="https://www.github.com/Douglaskav" alt="carrers">Carreiras</a>
           </li>
         </ul>
 
         <ul className="ml-4">
           <h4 className="text-xl font-medium text-logo_color-500">Contato</h4>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">ap76@contato.com</a>
+            <a href="https://www.github.com/Douglaskav" alt="email">ap76@contato.com</a>
           </li>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">+99 9999-9999</a>
+            <a href="https://www.github.com/Douglaskav" alt="number">+99 9999-9999</a>
           </li>
           <li className="text-sm font-medium mt-3 text-[#838383]">
-            <a href="#">Rua Alfredo Indiano N° 22</a>
+            <a href="https://www.github.com/Douglaskav" alt="address">Rua Alfredo Indiano N° 22</a>
           </li>
         </ul>
       </div>
