@@ -48,7 +48,7 @@ export function SomeProperties() {
           </button>
         </div>
 
-        <div className="flex items-center ml-4 overflow-y-hidden">
+        <div className="flex items-center ml-8 overflow-y-hidden">
           <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />
           <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />
           <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />

@@ -2,7 +2,7 @@ import { Chat, Funnel, Shield } from "phosphor-react";
 
 export function WhyUs() {
   return (
-    <div className="w-[100%] bg-[#3D4244] mt-[120px] flex pb-12">
+    <div className="w-[100%] h-[700px] flex justify-between bg-[#3D4244] mt-[120px] flex pb-10">
       <div className="mt-20 ml-16">
         <h3 className="text-4xl font-medium text-[#fff]">Por que a gente ?</h3>
         <p className="max-w-sm mt-3 font-light text-md text-[#D8D8D8]">
@@ -14,7 +14,7 @@ export function WhyUs() {
         </button>
       </div>
 
-      <div className="mt-20 ml-16">
+      <div className="mt-20 mr-20">
         <ul className="flex flex-wrap">
           <div>
             <li className="w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4 mb-6 mr-6">

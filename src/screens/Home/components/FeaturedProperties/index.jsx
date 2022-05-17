@@ -9,8 +9,8 @@ export function FeaturedProperties() {
         Imóveis em destaque
       </h1>
 
-      <div className="w-full flex flex-row flex-nowrap items-center jusitfy-center mt-8">
-        <div class="border rounded w-1/2 ml-5">
+      <div className="w-full flex flex-row flex-nowrap items-center justify-center mt-8">
+        <div class="border rounded w-[38%] mr-6">
           <div>
             <img
               src={ImovelImage1}
@@ -34,7 +34,7 @@ export function FeaturedProperties() {
           </div>
         </div>
 
-        <div class="border rounded w-1/2 mx-5">
+        <div class="border rounded w-[38%] ml-6">
           <div>
             <img
               src={ImovelImage2}
