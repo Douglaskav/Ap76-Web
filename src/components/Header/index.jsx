@@ -3,20 +3,20 @@ import LogoImage from "../../assets/Logo.svg";
 export function Header() {
   return (
     <header className="flex items-center justify-between mx-12 my-8">
-      <div className="flex items-center">
+      <a href="http://localhost:3000/" className="flex items-center">
         <img
           src={LogoImage}
           className="w-[36px] h-[36px] mr-3"
           alt="Ap76 Logo"
         />
         <span className="font-medium text-2xl text-logo_color-500">Ap76</span>
-      </div>
+      </a>
 
       <div className="flex items-center">
         <ul className="flex items-center">
           <li className="mr-4">
             <a
-              href="/"
+              href="http://localhost:3000/search"
               className="text-[0.8125rem] hover:text-secondary-500 transition-colors duration-200"
             >
               Imóveis para comprar
@@ -24,7 +24,7 @@ export function Header() {
           </li>
           <li className="mr-4">
             <a
-              href="/"
+              href="http://localhost:3000/search"
               className="text-[0.8125rem] hover:text-secondary-500 transition-colors duration-200"
             >
               Imoveis para alugar

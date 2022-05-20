@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header";
-import { Map } from "./components/Map";
-import { PropertiesFound } from "./components/PropertiesFound";
+import {Map} from "./components/Map";
+import {PropertiesFound} from "./components/PropertiesFound";
 
 export function SearchPage() {
   return (
@@ -8,9 +8,9 @@ export function SearchPage() {
       <Header />
 
       <div className="flex">
-        <PropertiesFound />
-        <Map />
-      </div>
+      <PropertiesFound />
+      <Map />
+      </div> 
     </div>
   );
 }
