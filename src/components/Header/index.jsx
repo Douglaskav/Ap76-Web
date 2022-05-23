@@ -1,8 +1,9 @@
+import { List } from "phosphor-react";
 import LogoImage from "../../assets/Logo.svg";
 
 export function Header() {
   return (
-    <header className="flex items-center justify-between mx-12 my-8">
+    <header className="flex items-center justify-between md:mx-12 mx-6 my-8">
       <a href="http://localhost:3000/" className="flex items-center">
         <img
           src={LogoImage}
@@ -12,7 +13,7 @@ export function Header() {
         <span className="font-medium text-2xl text-logo_color-500">Ap76</span>
       </a>
 
-      <div className="flex items-center">
+      <div className="hidden md:flex items-center">
         <ul className="flex items-center">
           <li className="mr-4">
             <a
@@ -57,6 +58,9 @@ export function Header() {
           Login
         </button>
       </div>
+
+      {/* MOBILE ONLY */}
+      <div className="visible md:hidden"><List size={32} /></div>
     </header>
   );
 }

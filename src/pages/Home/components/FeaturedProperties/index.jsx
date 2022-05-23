@@ -5,12 +5,12 @@ import ImovelImage2 from "../../../../assets/imo2.png";
 export function FeaturedProperties() {
   return (
     <div className="mt-[120px] flex flex-col items-center">
-      <h1 className="text-4xl font-medium text-[#222] text-center">
+      <h1 className="text-3xl font-medium text-[#222] text-center">
         Imóveis em destaque
       </h1>
 
-      <div className="w-full flex flex-row flex-nowrap items-center justify-center mt-8">
-        <div className="border rounded w-[38%] mr-6">
+      <div className="w-full flex flex-col md:flex-row flex-nowrap items-center justify-center">
+        <div className="border rounded md:w-[38%] md:mr-6 m-8">
           <div>
             <img
               src={ImovelImage1}
@@ -30,11 +30,12 @@ export function FeaturedProperties() {
               bathrooms={3}
               parkingSpot={3}
               size={200}
+             compressed 
             />
           </div>
         </div>
 
-        <div className="border rounded w-[38%] ml-6">
+        <div className="border rounded md:w-[38%] md:ml-6 m-8">
           <div>
             <img
               src={ImovelImage2}
@@ -54,6 +55,7 @@ export function FeaturedProperties() {
               bathrooms={3}
               parkingSpot={3}
               size={200}
+              compressed  
             />
           </div>
         </div>

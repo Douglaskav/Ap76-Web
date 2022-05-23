@@ -3,15 +3,15 @@ import { HowItWorksSectionContent } from "../../../../content/index";
 
 export function HowItWorks() {
   return (
-    <div className="mt-[120px]">
-      <h2 className="text-4xl font-medium text-[#222] text-center">
+    <div className="mt-16 md:mt-[120px]">
+      <h2 className="text-3xl md:text-4xl font-medium text-[#222] text-center">
         Como isto funciona ?
       </h2>
-      <ul className="flex justify-center items-center mt-8">
+      <ul className="flex flex-col md:flex-row justify-center items-center mt-8">
         {HowItWorksSectionContent.map((section, index) => {
           return (
             <li
-              className="w-72 h-72 border rounded-md p-4 mx-2 flex flex-col items-center justify-center"
+              className="w-72 h-72 border rounded-md p-4 m-2 flex flex-col items-center justify-center"
               key={section.title}
             >
               <div

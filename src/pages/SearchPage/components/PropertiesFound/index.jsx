@@ -10,7 +10,7 @@ export function PropertiesFound() {
           <span className="text-desc-300">Natal - RN</span>
         </span>
 
-        <button className="flex items-center justify-center bg-primary-500 p-5 px-10 rounded text-white font-medium hover:bg-primary-700 transition-colors">
+        <button className="flex items-center justify-center bg-primary-500 p-3 px-14 rounded text-white font-medium hover:bg-primary-700 transition-colors">
           <Funnel size={24} weight="bold" className="mr-2" /> Filtrar Imóveis
         </button>
       </div>

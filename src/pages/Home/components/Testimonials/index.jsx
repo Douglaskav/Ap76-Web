@@ -4,12 +4,12 @@ import PersonImage2 from "../../../../assets/testemunha02.png";
 export function Testimonials() {
   return (
     <div className="mt-[120px]">
-      <h1 className="text-4xl font-medium text-[#222] text-center">
+      <h1 className="text-3xl font-medium text-[#222] text-center">
         O que nossos clientes dizem
       </h1>
 
-      <div className="flex items-center items-stretch justify-center mt-8">
-        <div className="bg-primary-700 w-1/2 p-6 ml-12">
+      <div className="flex flex-col md:flex-row items-center md:items-stretch justify-center mt-8">
+        <div className="bg-primary-700 md:w-1/2 w-[90%] p-6 mb-4 md:m-0 md:ml-12">
           <p className="text-sm text-[#fff]">
             Lorem Ipsum é simplesmente uma simulação de texto da indústria
             tipográfica e de impressos, e vem sendo utilizado desde o século
@@ -28,7 +28,7 @@ export function Testimonials() {
             </div>
           </div>
         </div>
-        <div className="bg-primary-700 w-1/2 p-6 ml-6 mr-12">
+        <div className="bg-primary-700 md:w-1/2 w-[90%] p-6 md:ml-6 md:mr-12">
           <p className="text-sm text-[#fff]">
             É um fato conhecido de todos que um leitor se distrairá com o
             conteúdo de texto legível de uma página quando estiver examinando
