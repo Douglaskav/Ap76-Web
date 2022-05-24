@@ -30,7 +30,7 @@ export function Map() {
   });
 
   return (
-    <div className="w-[40%] h-[90vh] rounded">
+    <div className="w-[100%] h-[200px] md:w-[40%] md:h-[90vh] rounded">
       <div ref={mapContainer} className="map-container w-[100%] h-[100%]" />
     </div>
   );

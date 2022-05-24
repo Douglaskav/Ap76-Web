@@ -3,7 +3,7 @@ import ImovelImage1 from "../../../../assets/imo1.png";
 
 export function PropertyFindItem() {
   return (
-    <div className="w-[100%] md:w-[47%] h-[400px] border rounded m-2">
+    <div className="w-[100%] md:w-[47%] min-h-[400px] border rounded m-2">
       <div className="w-[100%]">
         <img src={ImovelImage1} alt="Imóvel" className="w-[100%] rounded-t" />
       </div>
