@@ -1,0 +1,52 @@
+.slide-items {
+	position: relative;
+  text-align: center;
+}
+
+.slide-items > * {
+	position: absolute;
+	pointer-events: none;
+	opacity: 0;
+}
+
+.slide-items > .active {
+	opacity: 1;
+	pointer-events: initial;
+	position: relative;
+}
+
+.slide-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-thumb {
+  display: flex;
+  width: 100px;
+}
+
+.slide-thumb > span {
+  flex: 1;
+  display: block;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.slide-thumb > span.active::after {
+  content: "";
+  display: block;
+  height: inherit;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  transform: translateX(-100%);
+  animation: thumb 5s linear forwards;
+}
+
+@keyframes thumb {
+  to {
+    transform: initial;
+  }
+}

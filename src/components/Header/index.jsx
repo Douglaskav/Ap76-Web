@@ -54,9 +54,11 @@ export function Header() {
         <button className="border border-primary-500 rounded px-4 py-3 text-primary-500 font-bold text-xs mr-4 min-w-[100px] min-h-[40px]">
           Criar Conta
         </button>
+        <a href="http://localhost:3000/login">
         <button className="rounded px-4 py-3 text-[#FFF] font-bold text-xs bg-primary-500 min-w-[100px] min-h-[40px]">
           Login
         </button>
+        </a>
       </div>
 
       {/* MOBILE ONLY */}

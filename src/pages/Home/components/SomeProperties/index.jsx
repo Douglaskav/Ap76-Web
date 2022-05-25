@@ -49,7 +49,7 @@ export function SomeProperties() {
           </button>
         </div>
 
-        <div className="flex items-center mt-5 ml-5 md:mt-0 overflow-y-hidden">
+        <div className="flex items-center mt-5 md:ml-5 md:mt-0 overflow-y-hidden">
           <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />
           <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />
           <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />

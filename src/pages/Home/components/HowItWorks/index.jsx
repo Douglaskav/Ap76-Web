@@ -1,5 +1,5 @@
 import { ArrowRight } from "phosphor-react";
-import { HowItWorksSectionContent } from "../../../../content/index";
+import { HowItWorksSectionContent } from "../../../../content/howItWorks.js";
 
 export function HowItWorks() {
   return (
@@ -15,7 +15,7 @@ export function HowItWorks() {
               key={section.title}
             >
               <div
-                className={`w-16 h-16 rounded-full bg-primary-${section.bgColor} flex justify-center items-center`}
+                className={`w-16 h-16 rounded-full bg-[${section.bgColor}] flex justify-center items-center`}
               >
                 <span className="font-bold text-[#FFF] text-xl">
                   {index + 1}
