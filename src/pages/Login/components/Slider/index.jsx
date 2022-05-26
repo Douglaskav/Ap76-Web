@@ -4,42 +4,37 @@ import { OnboardingSlideContent } from "../../../../content/onboardingSlide";
 import "./styles.css";
 
 export function Slider() {
-  let currentSlide = useRef(0);
-  let timeout = useRef(); 
-
-  function activeSlide(index) {
-    currentSlide.current = index;
-    autoSlide();
-  }
+  let [currentSlide, setCurrentSlide] = useState(0);
+  let timeout = useRef();
 
   function autoSlide() {
     clearTimeout(timeout.current);
-    timeout.current = setTimeout(next, 5000);
+    timeout.current = setTimeout(next, 12000);
   }
 
   function next() {
-    if (currentSlide.current < OnboardingSlideContent.length - 1) {
-      activeSlide(currentSlide + 1);
+    if (currentSlide < OnboardingSlideContent.length - 1) {
+      setCurrentSlide(currentSlide + 1);
     } else {
-      activeSlide(0);
+      console.log(currentSlide);
+      setCurrentSlide(0);
     }
   }
 
-  activeSlide(0);
+  autoSlide();
 
   return (
-    <div className="w-[100%] h-[100vh] bg-[#EAF7EF]">
+    <div className="w-[100%] h-[100%] pb-12 bg-[#EAF7EF]">
       <div data-slide="slide" className="slide">
         <div className="slide-items">
           {OnboardingSlideContent.map((slide, index) => (
             <div
               key={slide.id}
               className={
-                currentSlide.current === index
+                currentSlide === index
                   ? "active text-center flex flex-col justify-center items-center p-8"
                   : ""
               }
-              onClick={next}
             >
               <img
                 src={slide.image}
@@ -56,7 +51,10 @@ export function Slider() {
         <nav className="slide-nav">
           <div className="slide-thumb">
             {OnboardingSlideContent.map((el, index) => (
-              <span key={index} className={currentSlide.current === index ? "active" : ""}></span>
+              <span
+                key={index}
+                className={currentSlide === index ? "active" : ""}
+              ></span>
             ))}
           </div>
         </nav>
