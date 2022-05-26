@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import { OnboardingSlideContent } from "../../../../content/onboardingSlide";
+import { OnboardingSlideContent } from "../../content/onboardingSlide.js";
 
 import "./styles.css";
 
@@ -24,7 +24,7 @@ export function Slider() {
   autoSlide();
 
   return (
-    <div className="w-[100%] h-[100%] pb-12 bg-[#EAF7EF]">
+    <div className="w-[100%] min-h-[100vh] h-[100%] pb-12 bg-[#EAF7EF]">
       <div data-slide="slide" className="slide">
         <div className="slide-items">
           {OnboardingSlideContent.map((slide, index) => (

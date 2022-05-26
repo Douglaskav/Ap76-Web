@@ -2,7 +2,7 @@ import { Header } from "../../components/Header";
 import { Form } from "./components/Form";
 import { Slider } from "../../components/Slider";
 
-export function Login() {
+export function Register() {
   return (
     <div>
       <Header />
