@@ -51,18 +51,22 @@ export function Header() {
 
         <div className="w-[1px] h-[40px] bg-[#F5F5F5] mx-[18px]" />
 
-        <button className="border border-primary-500 rounded px-4 py-3 text-primary-500 font-bold text-xs mr-4 min-w-[100px] min-h-[40px]">
-          Criar Conta
-        </button>
+        <a href="/register">
+          <button className="border border-primary-500 rounded px-4 py-3 text-primary-500 font-bold text-xs mr-4 min-w-[100px] min-h-[40px]">
+            Criar Conta
+          </button>
+        </a>
         <a href="http://localhost:3000/login">
-        <button className="rounded px-4 py-3 text-[#FFF] font-bold text-xs bg-primary-500 min-w-[100px] min-h-[40px]">
-          Login
-        </button>
+          <button className="rounded px-4 py-3 text-[#FFF] font-bold text-xs bg-primary-500 min-w-[100px] min-h-[40px]">
+            Login
+          </button>
         </a>
       </div>
 
       {/* MOBILE ONLY */}
-      <div className="visible md:hidden"><List size={32} /></div>
+      <div className="visible md:hidden">
+        <List size={32} />
+      </div>
     </header>
   );
 }

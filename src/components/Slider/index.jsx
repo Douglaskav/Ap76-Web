@@ -5,26 +5,19 @@ import "./styles.css";
 
 export function Slider() {
   let [currentSlide, setCurrentSlide] = useState(0);
-  let timeout = useRef();
-
-  function autoSlide() {
-    clearTimeout(timeout.current);
-    timeout.current = setTimeout(next, 12000);
-  }
 
   function next() {
     if (currentSlide < OnboardingSlideContent.length - 1) {
       setCurrentSlide(currentSlide + 1);
     } else {
-      console.log(currentSlide);
       setCurrentSlide(0);
     }
   }
 
-  autoSlide();
+  setTimeout(next, 12000);
 
   return (
-    <div className="w-[100%] min-h-[100vh] h-[100%] pb-12 bg-[#EAF7EF]">
+    <div className="hidden md:block w-[100%] min-h-[100vh] h-[100%] pb-12 bg-[#EAF7EF]">
       <div data-slide="slide" className="slide">
         <div className="slide-items">
           {OnboardingSlideContent.map((slide, index) => (

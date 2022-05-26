@@ -2,7 +2,7 @@ import { EyeSlash } from "phosphor-react";
 
 export function Form() {
   return (
-    <div className="w-[100%] h-[100vh] mx-8">
+    <div className="w-[100%] min-h-[100vh] h-[100%] mx-8">
       <div>
         <h2 className="text-4xl font-medium mt-20 mb-16">Register</h2>
         <form>
@@ -55,12 +55,12 @@ export function Form() {
           <div className="flex justify-between items-center mt-4">
             <a
               href="/login"
-              className="text-primary-500 underline hover:text-primary-700 transition-colors"
+              className="text-primary-500 underline text-xs md:text-base hover:text-primary-700 transition-colors"
             >
               I already have an account
             </a>
           </div>
-          <button className="mt-8 py-5 rounded text-[#FFF] font-bold bg-primary-500 min-w-[400px] min-h-[40px] hover:bg-primary-700 transition-colors">
+          <button className="mt-8 py-5 rounded text-[#FFF] font-bold bg-primary-500 w-[100%] md:min-w-[400px] min-h-[40px] hover:bg-primary-700 transition-colors">
             Register
           </button>
         </form>

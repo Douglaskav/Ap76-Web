@@ -2,7 +2,7 @@ import LogoImage from "../../assets/Logo.svg";
 
 export function Footer() {
   return (
-    <div className="w-[100%] min-h-[320px] bg-[#E5F6EC] mt-[120px]">
+    <div className="w-[100%] min-h-[320px] bg-[#E5F6EC] mt-[120px] pb-4">
       <div className="flex justify-around p-12">
         <div>
           <div className="flex items-center">
@@ -84,20 +84,23 @@ export function Footer() {
           </ul>
         </div>
       </div>
-      <p className="text-center text-logo_color-500">
-        Designed and developed by{" "}
+      <p className="text-center text-logo_color-500 text-sm md:text-base">
+        Designed and developed by
         <a
           href="https://www.github.com/Douglaskav"
-          className="font-bold underline"
+          className="font-bold underline mx-1"
         >
           Me
-        </a>{" "}
-        icons by{" "}
-        <a href="https://www.pixeltrue.com/" className="font-bold underline">
+        </a>
+        icons by
+        <a
+          href="https://www.pixeltrue.com/"
+          className="font-bold underline mx-1"
+        >
           Pixeltrue
         </a>
       </p>
-      <p className="text-center text-sm text-logo_color-500">
+      <p className="text-center text-sm text-logo_color-500 mx-2 md:mx-0">
         All Rights reserved Douglaskav © 2022
       </p>
     </div>

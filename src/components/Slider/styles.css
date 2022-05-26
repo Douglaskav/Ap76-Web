@@ -28,7 +28,7 @@
 .slide-thumb > span {
   flex: 1;
   display: block;
-  height: 3px;
+  height: 4px;
   background-color: rgba(68, 171, 112, 0.3);
   margin: 5px;
   border-radius: 3px;
@@ -39,7 +39,7 @@
   content: "";
   display: block;
   height: inherit;
-  background-color: #2af580;
+  background-color: #44AB70;
   border-radius: 3px;
   transform: translateX(-100%);
   animation: thumb 12s linear forwards;
