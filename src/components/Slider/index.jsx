@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { OnboardingSlideContent } from "../../content/onboardingSlide.js";
 
 import "./styles.css";
