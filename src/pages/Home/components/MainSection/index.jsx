@@ -19,58 +19,59 @@ export function MainSection() {
           quando um impressor.
         </p>
 
-        <div className="mt-16">
-          <div>
-            <button className="bg-[#efe] w-32 px-4 rounded-tl">Comprar</button>
-            <button className="bg-primary-500 w-32 px-4 rounded-tr text-white">
+        <div className="my-8 md:mb-0 md:mt-16 flex items-center justify-center flex-col md:block">
+          <div class="flex items-center w-[100%]">
+            <button className="bg-green-600 w-[100%] md:w-32 p-2 md:p-0 md:px-4 rounded-tl text-white">Comprar</button>
+            <button className="bg-primary-500 w-[100%] md:w-32 p-2 md:p-0 md:px-4 rounded-tr text-white">
               Alugar
             </button>
           </div>
-          <div className="flex shadow-md w-[60%] absolute bg-white py-4 rounded-lg">
-            <form className="flex items-center justify-between w-[100%] mx-4">
-            <div className="flex">
-            <div className="flex">
-                <label>
-                  <MapPin size={32} color="#aaa" />
-                </label>
-                <select className="bg-[#fff] text-desc-700 text-sm">
-                  <option value="">Select your option</option>
-                  <option>Natal</option>
-                  <option>Mossoró</option>
-                  <option>Caico</option>
-                </select>
+          <div className="flex border md:border-0 md:shadow-md w-[100%] md:w-[60%] md:absolute bg-white pt-4 md:py-4 md:rounded-b-lg md:rounded-tr-lg">
+            <form className="flex flex-col md:flex-row md:items-center md:justify-between w-[100%] md:mx-4">
+              <div className="flex flex-col md:flex-row justify-center items-center">
+                <div className="flex">
+                  <label>
+                    <MapPin size={32} color="#aaa" />
+                  </label>
+                  <select className="bg-[#fff] text-desc-700 text-sm">
+                    <option value="">Select your option</option>
+                    <option value="Natal">Natal</option>
+                    <option value="Mossoró">Mossoró</option>
+                    <option value="Caico">Caico</option>
+                  </select>
+                </div>
+
+                <div className="w-[100%] h-[1px] md:w-[1px] md:h-8 bg-desc-700 mx-4 my-4 md:my-0 rounded" />
+
+                <div className="flex">
+                  <label>
+                    <HouseLine size={32} color="#aaa" />
+                  </label>
+                  <select className="bg-[#fff] text-desc-700 text-sm">
+                    <option value="">Property type</option>
+                    <option value="Casa">Casa</option>
+                    <option value="Apartamento">Apartamento</option>
+                  </select>
+                </div>
+
+                <div className="w-[100%] h-[1px] md:w-[1px] md:h-8 bg-desc-700 mx-4 my-4 md:my-0 rounded" />
+
+                <div className="flex mb-4 md:mb-0">
+                  <label>
+                    <CurrencyDollar size={32} color="#AAA" />
+                  </label>
+                  <select className="bg-[#fff] text-desc-700 text-sm">
+                    <option value="">Max Price</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="1500">1500</option>
+                    <option value="2000">2000</option>
+                    <option value="3000">3000</option>
+                    <option value="5000">5000</option>
+                  </select>
+                </div>
               </div>
-
-              <div className="w-[1px] h-8 bg-desc-700 mx-4 rounded" />
-
-              <div className="flex">
-                <label>
-                  <HouseLine size={32} color="#aaa" />
-                </label>
-                <select className="bg-[#fff] text-desc-700 text-sm">
-                  <option value="">Property type</option>
-                  <option>Natal</option>
-                  <option>Mossoró</option>
-                  <option>Caico</option>
-                </select>
-              </div>
-
-              <div className="w-[1px] h-8 bg-desc-700 mx-4 rounded" />
-
-              <div className="flex">
-                <label>
-                  <CurrencyDollar size={32} color="#AAA" />
-                </label>
-                <select className="bg-[#fff] text-desc-700 text-sm">
-                  <option value="">Max Price</option>
-                  <option>Natal</option>
-                  <option>Mossoró</option>
-                  <option>Caico</option>
-                </select>
-              </div>
-
-            </div>
-              <button className="w-12 h-12 rounded bg-primary-500 text-white flex justify-center items-center p-4">
+              <button className="md:w-12 w-[100%] h-12 rounded bg-primary-500 text-white flex justify-center items-center p-4">
                 <MagnifyingGlass size={32} weight="bold" />
               </button>
             </form>

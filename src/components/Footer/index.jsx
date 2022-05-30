@@ -45,7 +45,7 @@ export function Footer() {
             </li>
           </ul>
 
-          <ul className="md:mx-4 my-4">
+          <ul className="md:mx-4">
             <h4 className="text-xl font-medium text-logo_color-500">Empresa</h4>
             <li className="text-sm font-medium mt-3 text-[#838383]">
               <a href="https://www.github.com/Douglaskav" alt="terms">
