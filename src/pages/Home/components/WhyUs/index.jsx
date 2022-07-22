@@ -14,54 +14,37 @@ export function WhyUs() {
         </button>
       </div>
 
-      <div className="mt-20 md:mr-20 flex items-center md:items-start justify-center md:justify-base">
-        <ul className="flex items-center md:items-start justify-center md:justify-base flex-wrap">
-          <div>
-            <li className="w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4 mb-6 md:mr-6">
-              <div className="rounded w-[46px] h-[46px] bg-[#EAFAF1] flex justify-center items-center">
-                <Funnel size={26} color="#44AB70" />
-              </div>
+      <div className="md:mr-20 flex items-center justify-center">
+        <ul className="flex items-center md:items-start justify-center md:justify-base flex-wrap mt-8 max-w-xl">
+          <li className="w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4">
+            <div className="rounded w-[46px] h-[46px] bg-[#EAFAF1] flex justify-center items-center">
+              <Funnel size={26} color="#44AB70" />
+            </div>
 
-              <h4 className="text-lg text-logo_color-500 font-medium mt-3">
-                Filtre de acordo com suas preferencas
-              </h4>
-              <p className="text-xs text-desc-700">
-                Lorem Ipsum é simplesmente uma simulação de texto da indústria
-                tipográfica e de impressos, e vem sendo utilizado desde o século
-                XVI.
-              </p>
-            </li>
-            <li className="w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4">
-              <div className="rounded w-[46px] h-[46px] bg-[#EAFAF1] flex justify-center items-center">
-                <Chat size={26} color="#44AB70" />
-              </div>
+            <h4 className="text-lg text-logo_color-500 font-medium mt-3">
+              Filtre de acordo com suas preferencas
+            </h4>
+            <p className="text-xs text-desc-700">
+              Lorem Ipsum é simplesmente uma simulação de texto da indústria
+              tipográfica e de impressos, e vem sendo utilizado desde o século
+              XVI.
+            </p>
+          </li>
+          <li className="w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4 my-6 md:my-0 md:mb-6 mx-6">
+            <div className="rounded w-[46px] h-[46px] bg-[#EAFAF1] flex justify-center items-center">
+              <Chat size={26} color="#44AB70" />
+            </div>
 
-              <h4 className="text-lg text-logo_color-500 font-medium mt-3">
-                Chat em real time
-              </h4>
-              <p className="text-xs text-desc-700">
-                Lorem Ipsum é simplesmente uma simulação de texto da indústria
-                tipográfica e de impressos, e vem sendo utilizado desde o século
-                XVI.
-              </p>
-            </li>
-            <li className="w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4 md:hidden mt-6">
-              <div className="rounded w-[46px] h-[46px] bg-[#EAFAF1] flex justify-center items-center">
-                <Shield size={26} color="#44AB70" />
-              </div>
-
-              <h4 className="text-lg text-logo_color-500 font-medium mt-3">
-                Fácil e seguro
-              </h4>
-              <p className="text-xs text-desc-700">
-                Lorem Ipsum é simplesmente uma simulação de texto da indústria
-                tipográfica e de impressos, e vem sendo utilizado desde o século
-                XVI.
-              </p>
-            </li>
-          </div>
-          {/* Desktop Only */}
-          <li className="w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4 md:mt-[100px] mt-6 invisible md:visible">
+            <h4 className="text-lg text-logo_color-500 font-medium mt-3">
+              Chat em real time
+            </h4>
+            <p className="text-xs text-desc-700">
+              Lorem Ipsum é simplesmente uma simulação de texto da indústria
+              tipográfica e de impressos, e vem sendo utilizado desde o século
+              XVI.
+            </p>
+          </li>
+          <li className="w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4">
             <div className="rounded w-[46px] h-[46px] bg-[#EAFAF1] flex justify-center items-center">
               <Shield size={26} color="#44AB70" />
             </div>

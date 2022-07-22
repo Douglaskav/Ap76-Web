@@ -6,12 +6,12 @@ export function Faq() {
     <div className="mt-[120px]">
       <h1 className="text-3xl font-medium text-[#222] text-center">FAQ</h1>
 
-      <div className="flex flex-col md:flex-row md:mr-6 mt-8">
+      <div className="flex flex-col justify-between md:flex-row md:mr-6 mt-8">
         <div className="md:w-[50%] w-[100%]">
-          <img src={FaqImage} alt="An apartament" />
+          <img src={FaqImage} alt="An apartament" className="w-[100%]" />
         </div>
         <div className="md:ml-8 m-4">
-          <h2 className="text-3xl max-w-[500px] text-logo_color-500 font-medium">
+          <h2 className="text-3xl max-w-[600px] text-logo_color-500 font-medium">
             As perguntas mais comuns que recebemos, e que talvez você tambem
             pode tê-las
           </h2>

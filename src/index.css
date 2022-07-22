@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.btn-comprar {
+		@apply bg-primary-500 w-[100%] md:h-[36px] md:w-32 p-4 md:p-0 md:px-4 rounded-tr text-white
+	}
+}

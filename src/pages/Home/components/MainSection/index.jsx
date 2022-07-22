@@ -9,22 +9,22 @@ import BannerImage from "../../../../assets/main-section-image.png";
 export function MainSection() {
   return (
     <div className="flex flex-col md:flex-row flex-col-reverse text-center md:text-justify">
-      <div className="mx-4 md:ml-12 md:mr-4 md:max-w-[50%] mt-8">
-        <h1 className="text-3xl md:text-4xl font-medium text-[#222]">
-          Procurar imóveis agora é muito mais fácil e simples.
+      <div className="mx-4 md:ml-12 md:mr-4 mt-8 flex-1">
+        <h1 className="text-4xl font-medium">
+          Procurar imóveis agora <br/>é muito mais fácil e simples.
         </h1>
-        <p className="mx-4 md:mx-0 text-sm text-desc-500 md:max-w-[90%] mt-3">
+        <p className="mx-4 md:mx-0 text-sm text-desc-500 md:text-md mt-3 md:mr-6">
           Lorem Ipsum é simplesmente uma simulação de texto da indústria
-          tipográfica e de impressos, e vem sendo utilizado desde o século XVI,
+          tipográfica<br/> e de impressos, e vem sendo utilizado desde o século XVI,
           quando um impressor.
         </p>
 
         <div className="my-8 md:mb-0 md:mt-16 flex items-center justify-center flex-col md:block">
-          <div class="flex items-center w-[100%]">
-            <button className="bg-green-600 w-[100%] md:w-32 p-2 md:p-0 md:px-4 rounded-tl text-white">Comprar</button>
-            <button className="bg-primary-500 w-[100%] md:w-32 p-2 md:p-0 md:px-4 rounded-tr text-white">
+          <div className="flex items-center w-[100%]">
+            <button className="bg-[#eee] w-[100%] md:h-[36px] md:w-32 p-4 md:p-0 md:px-4 rounded-tl text-gray">
               Alugar
             </button>
+            <button className="btn-comprar">Comprar</button>
           </div>
           <div className="flex border md:border-0 md:shadow-md w-[100%] md:w-[60%] md:absolute bg-white pt-4 md:py-4 md:rounded-b-lg md:rounded-tr-lg">
             <form className="flex flex-col md:flex-row md:items-center md:justify-between w-[100%] md:mx-4">
@@ -79,8 +79,8 @@ export function MainSection() {
         </div>
       </div>
 
-      <div className="w-[100%] mt-[-10px] md:mt-0 md:w-[60%] h-[auto]">
-        <img src={BannerImage} alt="An builder" />
+      <div className="w-[100%] flex-1">
+        <img src={BannerImage} alt="An builder" className="w-[100%]" />
       </div>
     </div>
   );
