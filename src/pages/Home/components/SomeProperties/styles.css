@@ -1,0 +1,59 @@
+@tailwind components;
+
+@layer components {
+	.some-properties-container {
+		@apply flex flex-col md:flex-row mt-8 mx-4;
+	}
+
+	.some-properties-info {
+		@apply md:max-w-[45%] md:min-w-[45%];
+	}
+
+	.some-properties-info-header {
+		@apply flex justify-between items-center;
+	}
+
+	.some-properties-header-info-button {
+		@apply w-14 h-14 rounded-full border-2 mr-2 border-primary-500 flex items-center justify-center text-primary-500;
+	}
+
+	.some-properties-number-one {
+		@apply text-3xl md:text-4xl text-logo_color-500 font-medium;
+	}
+
+	.some-properties-number-two {
+		@apply text-desc-300 text-2xl md:text-3xl;
+	}
+
+	.some-properties-city-and-value {
+		@apply flex justify-between items-center;
+	}
+
+	.city {
+		@apply text-xs text-desc-500;
+	}
+
+	.value {
+		@apply text-xl md:text-2xl text-logo_color-500 font-bold;
+	}
+
+	.month {
+		@apply text-primary-700 text-lg;
+	}
+
+	.some-properties-title {
+		@apply text-xl md:text-2xl my-4 font-medium text-logo_color-500;
+	}
+
+	.some-properties-address {
+		@apply text-desc-700 text-xs md:text-sm;
+	}
+
+	.some-properties-info-button {
+		@apply w-[100%] md:w-[270px] py-3 px-8 mt-6 bg-transparent border-2 border-primary-700 text-primary-700 font-medium text-center rounded text-sm hover:bg-primary-700 hover:text-[#fff] transition-colors;
+	}
+
+	.image {
+		@apply min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700;
+	}
+}

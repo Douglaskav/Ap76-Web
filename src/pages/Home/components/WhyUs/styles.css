@@ -1,0 +1,47 @@
+@tailwind components;
+
+@layer components {
+	.whyus-container {
+		@apply w-[100%] min-h-[700px] flex flex-col md:flex-row md:justify-between bg-[#3D4244] mt-32 pb-10;
+	}
+
+	.whyus-info-container {
+		@apply mt-20 md:ml-16 text-center md:text-justify;
+	}
+
+	.whyus-title {
+		@apply text-3xl font-medium text-[#fff];
+	}
+
+	.whyus-desc {
+		@apply md:max-w-sm mt-3 font-light text-base text-[#D8D8D8];
+	}
+
+	.whyus-button {
+		@apply min-w-[270px] py-3 px-8 mt-6 bg-transparent border-2 border-primary-700 text-primary-700 font-medium text-center rounded text-sm hover:bg-primary-700 hover:text-[#fff] transition-colors;
+	}
+
+	.whyus-items-container {
+		@apply md:mr-20 flex items-center justify-center;
+	}
+
+	.whyus-items-flex {
+		@apply flex items-center md:items-start justify-center flex-wrap mt-8 max-w-xl;
+	}
+
+	.whyus-item {
+		@apply w-[230px] h-[230px] rounded-2xl bg-[#fff] p-4;
+	}
+
+	.whyus-item-icon-container {
+		@apply rounded w-[46px] h-[46px] bg-[#EAFAF1] flex justify-center items-center;
+	}
+
+	.whyus-item-title {
+		@apply text-lg text-logo_color-500 font-medium mt-3;
+	}
+
+	.whyus-item-desc {
+		@apply text-xs text-desc-700;
+	}
+}

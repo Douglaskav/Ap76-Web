@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-	.btn-comprar {
-		@apply bg-primary-500 w-[100%] md:h-[36px] md:w-32 p-4 md:p-0 md:px-4 rounded-tr text-white
-	}
+	.container { @apply mt-32 }
+	.section-title { @apply text-3xl md:text-4xl font-medium text-[#222] text-center }
 }

@@ -2,7 +2,7 @@ import LogoImage from "../../assets/Logo.svg";
 
 export function Footer() {
   return (
-    <div className="w-[100%] min-h-[320px] bg-[#E5F6EC] mt-[120px] pb-4">
+    <div className="w-[100%] min-h-[320px] bg-[#E5F6EC] mt-32 pb-4">
       <div className="flex justify-around p-12">
         <div>
           <div className="flex items-center">

@@ -1,0 +1,31 @@
+@tailwind components;
+
+@layer components {
+	.container {
+		@apply mt-16 md:mt-32;
+	}
+
+	.howitworks-section-container {
+		@apply flex flex-col md:flex-row justify-center items-center mt-8;
+	}
+
+	.howitworks-item {
+		@apply w-72 h-72 border rounded-md p-4 m-2 flex flex-col items-center justify-center;
+	}
+
+	.howitworks-circle {
+		@apply w-16 h-16 rounded-full flex justify-center items-center;
+	}
+
+	.howitworks-info-title {
+		@apply text-lg font-medium text-center max-w-[95%] text-logo_color-500 mt-5;
+	}
+
+	.howitworks-info-explanation {
+		@apply text-sm text-desc-300 max-w-[95%] text-center mb-4 mt-1;
+	}
+
+	.howitworks-link {
+		@apply text-secondary-500 text-xs flex items-center;
+	}
+}

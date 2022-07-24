@@ -1,39 +1,40 @@
 import { CaretLeft, CaretRight } from "phosphor-react";
 import { GeralInfoAboutProperty } from "../../../../components/GeralInfoAboutProperty";
+import "./styles.css";
 
 export function SomeProperties() {
   return (
-    <div className="mt-16 md:mt-[120px] md:mx-12">
-      <h1 className="text-3xl mx-2 md:mx-0 md:text-4xl font-medium text-[#222] text-center">
+    <div className="mt-16 md:mt-32 md:mx-12">
+      <h1 className="section-title">
         Algumas propriedades
       </h1>
-      <div className="flex flex-col md:flex-row mt-8 mx-4">
-        <div className="md:max-w-[45%] md:min-w-[45%]">
-          <div className="flex justify-between items-center">
+      <div className="some-properties-container">
+        <div className="some-properties-info">
+          <div className="some-properties-info-header">
             <div className="flex">
-              <button className="w-14 h-14 rounded-full border-2 mr-2 border-primary-500 flex items-center justify-center text-primary-500">
+              <button className="some-properties-header-info-button">
                 <CaretLeft size={20} weight="bold" />
               </button>
-              <button className="w-14 h-14 rounded-full border-2 ml-2 border-primary-500 flex items-center justify-center text-primary-500">
+              <button className="some-properties-header-info-button">
                 <CaretRight size={20} weight="bold" />
               </button>
             </div>
 
-            <h3 className="text-3xl md:text-4xl text-logo_color-500 font-medium">
-              01/<span className="text-desc-300 text-2xl md:text-3xl">04</span>
+            <h3 className="some-properties-number-one">
+              01/<span className="some-properties-number-two">04</span>
             </h3>
           </div>
-          <hr className="my-5" />
-          <div className="flex justify-between items-center">
-            <span className="text-xs text-desc-500">São Paulo</span>
-            <span className="text-xl md:text-2xl text-logo_color-500 font-bold">
-              R$ 2,200<span className="text-primary-700 text-lg">/mês</span>
+          <hr className="my-5"/>
+          <div className="some-properties-city-and-value">
+            <span className="city">São Paulo</span>
+            <span className="value">
+              R$ 2,200<span className="month">/mês</span>
             </span>
           </div>
-          <h3 className="text-xl md:text-2xl my-4 font-medium text-logo_color-500">
+          <h3 className="some-properties-title">
             Apartamento para alugar com 3 quartos, 120m²
           </h3>
-          <p className="text-desc-700 text-xs md:text-sm">
+          <p className="some-properties-address">
             Rua Inácio Luís da Costa, Parque São Domingos, São Paulo
           </p>
           <GeralInfoAboutProperty
@@ -44,15 +45,15 @@ export function SomeProperties() {
             compressed
           />
 
-          <button className="w-[100%] md:w-[270px] py-3 px-8 mt-6 bg-transparent border-2 border-primary-700 text-primary-700 font-medium text-center rounded text-sm hover:bg-primary-700 hover:text-[#fff] transition-colors">
+          <button className="some-properties-info-button">
             Procurar mais no explorador
           </button>
         </div>
 
         <div className="flex items-center mt-5 md:ml-5 md:mt-0 overflow-y-hidden">
-          <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />
-          <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />
-          <div className="min-w-[400px] h-[400px] rounded border-2 border-[#fff] bg-primary-700" />
+          <div className="image" />
+          <div className="image" />
+          <div className="image" />
         </div>
       </div>
     </div>
