@@ -1,54 +1,43 @@
 import { EyeSlash } from "phosphor-react";
+import "./styles.css";
 
 export function Form() {
   return (
-    <div className="w-[100%] min-h-[100vh] h-[100%] mx-8">
+    <div className="container-form">
       <div>
-        <h2 className="text-4xl font-medium mt-20 mb-16">Login</h2>
+        <h2 className="form-container-title">Login</h2>
         <form>
-          <div className="flex flex-col ">
-            <label className="text-lg text-logo_desc-500 font-semibold">
-              Email
-            </label>
+          <div className="form-login-inputgroup">
+            <label className="form-login-label">Email</label>
             <input
               type="email"
               placeholder="example@placeholder.com"
-              className="border-b-2 border-desc-700 focus:outline-none focus:ring-0 text-logo_color-500 placeholder:text-desc-700 focus:border-primary-300 transition-colors"
+              className="form-login-input"
             />
           </div>
 
-          <div className="flex flex-col mt-12 ">
-            <label className="text-lg text-logo_desc-500 font-semibold">
-              Password
-            </label>
+          <div className="form-login-inputgroup mt-12">
+            <label className="form-login-label">Password</label>
             <div className="flex items-center">
               <input
                 type="password"
                 placeholder="***********"
-                className="border-b-2 border-desc-700 focus:outline-none focus:ring-0 text-logo_color-500 placeholder:text-desc-700 focus:border-primary-300 transition-colors flex flex-1"
+                className="form-login-input flex-1"
               />
               <EyeSlash size={24} color="#aaa" />
             </div>
           </div>
 
-          <div className="flex justify-between items-center mt-4">
-            <a
-              href="/forgot"
-              className="text-primary-500 underline hover:text-primary-700 transition-colors text-xs md:text-base"
-            >
+          <div className="form-login-links-container">
+            <a href="/forgot" className="form-login-link">
               I forgot my password
             </a>
-            <a
-              href="/register"
-              className="text-primary-500 underline hover:text-primary-700 transition-colors text-xs md:text-base"
-            >
+            <a href="/register" className="form-login-link">
               I don't have an account yet
             </a>
           </div>
 
-          <button className="mt-8 py-5 rounded text-[#FFF] font-bold bg-primary-500 md:min-w-[400px] w-[100%] md:min-h-[40px] hover:bg-primary-700 transition-colors">
-            Login
-          </button>
+          <button className="form-login-button">Login</button>
         </form>
       </div>
     </div>
