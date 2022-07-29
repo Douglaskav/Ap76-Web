@@ -3,7 +3,7 @@
 }
 
 .form-container-title {
-	@apply text-4xl font-medium mt-20 mb-16;
+	@apply text-4xl font-medium mb-12;
 }
 
 .form-login-inputgroup {
