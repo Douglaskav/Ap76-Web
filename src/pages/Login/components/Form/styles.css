@@ -1,0 +1,31 @@
+.container-form {
+	@apply w-[100%] min-h-[100vh] h-[100%] mx-8;
+}
+
+.form-container-title {
+	@apply text-4xl font-medium mb-12;
+}
+
+.form-login-inputgroup {
+	@apply flex flex-col;
+}
+
+.form-login-label {
+	@apply text-lg text-logo_color-500 font-semibold;
+}
+
+.form-login-input {
+	@apply border-b-2 border-desc-700 focus:outline-none focus:ring-0 text-logo_color-500 placeholder:text-desc-700 focus:border-primary-300 transition-colors;
+}
+
+.form-login-links-container {
+	@apply flex justify-between items-center mt-4;
+}
+
+.form-login-link {
+	@apply text-primary-500 underline hover:text-primary-700 transition-colors text-xs md:text-base;
+}
+
+.form-login-button {
+	@apply mt-8 py-5 rounded text-[#FFF] font-bold bg-primary-500 md:min-w-[400px] w-[100%] md:min-h-[40px] hover:bg-primary-700 transition-colors;
+}

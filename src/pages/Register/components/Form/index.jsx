@@ -1,70 +1,84 @@
+import { useState } from "react";
 import { EyeSlash } from "phosphor-react";
+import api from "../../../../services/api";
 
 export function Form() {
+  const [formData, setFormData] = useState({
+    username: "",
+    email: "",
+    password: "",
+  });
+
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+
+    setFormData({ ...formData, [name]: value });
+  }
+
+  async function handleSubmitForm(event) {
+    event.preventDefault();
+    
+    const response = await api.post("/user/create", formData);
+    console.log(response.data);
+  }
+
   return (
-    <div className="w-[100%] min-h-[100vh] h-[100%] mx-8">
-      <div>
-        <h2 className="text-4xl font-medium mt-20 mb-16">Register</h2>
-        <form>
-          <div className="flex flex-col ">
-            <label className="text-lg text-logo_desc-500 font-semibold">
-              Username
-            </label>
+    <div className="container-form">
+      <h2 className="form-container-title mt-10">Register</h2>
+      <form>
+        <div className="form-login-inputgroup">
+          <label className="form-login-label">Username</label>
+          <input
+            type="name"
+            name="username"
+            placeholder="Lucas Gabriel"
+            className="form-login-input"
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="form-login-inputgroup mt-12">
+          <label className="form-login-label">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="example@placeholder.com"
+            className="form-login-input"
+            onChange={handleInputChange}
+          />
+        </div>
+        <div className="form-login-inputgroup mt-12 ">
+          <label className="form-login-label">Password</label>
+          <div className="flex items-center">
             <input
-              type="name"
-              placeholder="Lucas Gabriel"
-              className="border-b-2 border-desc-700 focus:outline-none focus:ring-0 text-logo_color-500 placeholder:text-desc-700 focus:border-primary-300 transition-colors"
+              type="password"
+              name="password"
+              placeholder="***********"
+              className="form-login-input flex-1"
+              onChange={handleInputChange}
             />
+            <EyeSlash size={24} color="#aaa" />
           </div>
-          <div className="flex flex-col mt-12">
-            <label className="text-lg text-logo_desc-500 font-semibold">
-              Email
-            </label>
+        </div>
+        <div className="form-login-inputgroup mt-12 ">
+          <label className="form-login-label">Repeat Password</label>
+          <div className="flex items-center">
             <input
-              type="email"
-              placeholder="example@placeholder.com"
-              className="border-b-2 border-desc-700 focus:outline-none focus:ring-0 text-logo_color-500 placeholder:text-desc-700 focus:border-primary-300 transition-colors"
+              type="password"
+              placeholder="***********"
+              className="form-login-input flex-1"
             />
+            <EyeSlash size={24} color="#aaa" />
           </div>
-          <div className="flex flex-col mt-12 ">
-            <label className="text-lg text-logo_desc-500 font-semibold">
-              Password
-            </label>
-            <div className="flex items-center">
-              <input
-                type="password"
-                placeholder="***********"
-                className="border-b-2 border-desc-700 focus:outline-none focus:ring-0 text-logo_color-500 placeholder:text-desc-700 focus:border-primary-300 transition-colors flex flex-1"
-              />
-              <EyeSlash size={24} color="#aaa" />
-            </div>
-          </div>
-          <div className="flex flex-col mt-12 ">
-            <label className="text-lg text-logo_desc-500 font-semibold">
-              Repeat Password
-            </label>
-            <div className="flex items-center">
-              <input
-                type="password"
-                placeholder="***********"
-                className="border-b-2 border-desc-700 focus:outline-none focus:ring-0 text-desc-500 placeholder:text-desc-700 focus:border-primary-300 transition-colors flex flex-1"
-              />
-              <EyeSlash size={24} color="#aaa" />
-            </div>
-          </div>
-          <div className="flex justify-between items-center mt-4">
-            <a
-              href="/login"
-              className="text-primary-500 underline text-xs md:text-base hover:text-primary-700 transition-colors"
-            >
-              I already have an account
-            </a>
-          </div>
-          <button className="mt-8 py-5 rounded text-[#FFF] font-bold bg-primary-500 w-[100%] md:min-w-[400px] min-h-[40px] hover:bg-primary-700 transition-colors">
-            Register
-          </button>
-        </form>
-      </div>
+        </div>
+        <div className="form-login-links-container">
+          <a href="/login" className="form-login-link">
+            I already have an account
+          </a>
+        </div>
+        <button className="form-login-button" onClick={handleSubmitForm}>
+          Register
+        </button>
+      </form>
     </div>
   );
 }
