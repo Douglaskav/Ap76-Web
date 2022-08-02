@@ -24,7 +24,7 @@ export function Form() {
           />
         </div>
 
-        <div className="form-login-inputgroup mt-12">
+        <div className="form-login-inputgroup mt-6">
           <label className="form-login-label">Password</label>
           <div className="flex items-center">
             <input

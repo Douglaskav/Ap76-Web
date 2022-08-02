@@ -32,7 +32,7 @@ export function Slider() {
               <img
                 src={slide.image}
                 alt="an ilustraded woman"
-                className="w-[550px]"
+                className="w-[400px]"
               />
               <h2 className="text-3xl w-96 text-[#111] font-bold max-w-64">
                 {slide.title}

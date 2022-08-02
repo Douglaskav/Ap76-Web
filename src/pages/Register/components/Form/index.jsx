@@ -3,6 +3,7 @@ import { EyeSlash } from "phosphor-react";
 import api from "../../../../services/api";
 
 export function Form() {
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
     email: "",
@@ -16,15 +17,17 @@ export function Form() {
   }
 
   async function handleSubmitForm(event) {
+    setLoading(true);
     event.preventDefault();
-    
+
     const response = await api.post("/user/create", formData);
     console.log(response.data);
+    alert("Formulário enviado com sucesso !");
   }
 
   return (
     <div className="container-form">
-      <h2 className="form-container-title mt-10">Register</h2>
+      <h2 className="form-container-title">Register</h2>
       <form>
         <div className="form-login-inputgroup">
           <label className="form-login-label">Username</label>
@@ -36,7 +39,7 @@ export function Form() {
             onChange={handleInputChange}
           />
         </div>
-        <div className="form-login-inputgroup mt-12">
+        <div className="form-login-inputgroup mt-8">
           <label className="form-login-label">Email</label>
           <input
             type="email"
@@ -46,7 +49,7 @@ export function Form() {
             onChange={handleInputChange}
           />
         </div>
-        <div className="form-login-inputgroup mt-12 ">
+        <div className="form-login-inputgroup mt-8 ">
           <label className="form-login-label">Password</label>
           <div className="flex items-center">
             <input
@@ -59,7 +62,7 @@ export function Form() {
             <EyeSlash size={24} color="#aaa" />
           </div>
         </div>
-        <div className="form-login-inputgroup mt-12 ">
+        <div className="form-login-inputgroup mt-8 ">
           <label className="form-login-label">Repeat Password</label>
           <div className="flex items-center">
             <input
@@ -76,7 +79,7 @@ export function Form() {
           </a>
         </div>
         <button className="form-login-button" onClick={handleSubmitForm}>
-          Register
+          {loading ? "Sending..." : "Register"}
         </button>
       </form>
     </div>
