@@ -3,6 +3,7 @@ import {
 	InfoContainer,
 	MainTitle,
 	MainSubtitle,
+	FormContainer,
 	InputFieldContainer,
 	FieldGroup,
 	InputText,
@@ -28,23 +29,25 @@ export const MainSection = () => {
 					quando um impressor.
 				</MainSubtitle>
 
-				<InputFieldContainer>
-					<FieldGroup>
-						<InputText placeholder="Localização" />
-						<MapPinLine size={24} color="#aaaaaa" />
-					</FieldGroup>
+				<FormContainer>
+					<InputFieldContainer>
+						<FieldGroup>
+							<InputText placeholder="Localização" />
+							<MapPinLine size={24} color="#aaaaaa" />
+						</FieldGroup>
 
-					<FieldGroup>
-						<InputText placeholder="Propriedade" />
-						<HouseLine size={24} color="#aaaaaa" />
-					</FieldGroup>
+						<FieldGroup>
+							<InputText placeholder="Propriedade" />
+							<HouseLine size={24} color="#aaaaaa" />
+						</FieldGroup>
 
-					<FieldGroup>
-						<InputText placeholder="Preço Maximo" />
-						<Money size={24} color="#aaaaaa" />
-					</FieldGroup>
-				</InputFieldContainer>
-				<InputButton>Pesquisar</InputButton>
+						<FieldGroup>
+							<InputText placeholder="Preço Maximo" />
+							<Money size={24} color="#aaaaaa" />
+						</FieldGroup>
+					</InputFieldContainer>
+					<InputButton>Pesquisar</InputButton>
+				</FormContainer>
 			</InfoContainer>
 
 			<ImageContainer>

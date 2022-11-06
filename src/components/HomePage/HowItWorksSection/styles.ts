@@ -20,7 +20,7 @@ export const SectionContainer = styled.ul`
 `;
 
 export const SectionItem = styled.li`
-	width: 300px;
+	width: 30%;
 	height: 300px;
 	border: 1px solid #ccc;
 	border-radius: 10px;

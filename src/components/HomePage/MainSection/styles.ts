@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const MainSectionContainer = styled.div`
-	flex: 1;
 	width: 100%;
 	display: flex;
 	margin-top: 30px;
@@ -15,7 +14,6 @@ export const MainSectionContainer = styled.div`
 export const InfoContainer = styled.div`
 	flex: 1;
 	margin: 30px;
-	min-width: 50%;
 
 	@media only screen and (min-width: 768px) {
 		margin: 60px 20px 50px 60px;
@@ -25,19 +23,34 @@ export const InfoContainer = styled.div`
 export const MainTitle = styled.h1`
 	font-family: "Poppins", sans-serif;
 	font-weight: 600;
-	max-width: 640px;
+	max-width: 90%;
 	font-size: 2.5em;
 	line-height: 60px;
 	color: #222;
+
+	@media only screen and (min-width: 1600px) {
+		font-size: 3.5em;
+		line-height: 84px;
+	}
 `;
 
 export const MainSubtitle = styled.p`
 	color: #333333;
-	max-width: 600px;
+	max-width: 90%;
 	font-size: 1em;
 	margin-top: 20px;
 	line-height: 31px;
 	letter-spacing: 0.03em;
+
+	@media only screen and (min-width: 1600px) {
+		font-size: 1.3em;
+		line-height: 31.2px;
+		letter-spacing: 0.03em;
+	}
+`;
+
+export const FormContainer = styled.div`
+	width: 90%;
 `;
 
 export const InputFieldContainer = styled.form`
@@ -54,10 +67,10 @@ export const InputFieldContainer = styled.form`
 `;
 
 export const FieldGroup = styled.div`
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
 	min-height: 50px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -76,6 +89,7 @@ export const FieldGroup = styled.div`
 `;
 
 export const InputText = styled.input`
+	width: 100%;
 	height: 100%;
 	border-radius: 5px;
 	border: none;
@@ -118,6 +132,7 @@ export const InputButton = styled.button`
 `;
 
 export const ImageContainer = styled.div`
+	flex: 1;
 	right: 0;
 `;
 
