@@ -4,6 +4,7 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 160px;
 `;
 
 const Title = styled.h2`
@@ -12,7 +13,6 @@ const Title = styled.h2`
   line-height: 60px;
   font-weight: 500;
   margin-left: 30px;
-
   
 	@media only screen and (min-width: 768px) {
     margin-left: 0px;
