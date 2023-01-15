@@ -1,4 +1,5 @@
 import { MainSection } from "./MainSection";
 import { HowItWorksSection } from "./HowItWorksSection";
+import { SomePropertiesSection } from "./SomePropertiesSection";
 
-export { MainSection, HowItWorksSection };
+export { MainSection, HowItWorksSection, SomePropertiesSection };

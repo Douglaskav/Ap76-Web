@@ -1,7 +1,7 @@
 import { Container } from "./styles";
 
 import { Header } from "../../components/_Header";
-import { MainSection, HowItWorksSection } from "../../components/HomePage";
+import { MainSection, HowItWorksSection, SomePropertiesSection } from "../../components/HomePage";
 
 export const Home = () => {
 	return (
@@ -9,6 +9,7 @@ export const Home = () => {
 			<Header />
 			<MainSection />
 			<HowItWorksSection />
+			<SomePropertiesSection />
 		</Container>
 	);
 };

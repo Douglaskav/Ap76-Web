@@ -6,21 +6,27 @@ export const Container = styled.div`
 `;
 
 export const SectionContainer = styled.ul`
+	display: flex;
+	justify-content: center;
+`;
+
+export const SectionItemsContainer = styled.ul`
 	flex: 1;
 	display: flex;
 	justify-content: space-around;
-	margin: 60px;
+	margin: 30px;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 0px;
 
-	@media only screen and (min-width: 900px) {
+	@media only screen and (min-width: 900px) {		
+		max-width: 80%;
 		flex-direction: row;
 	}
 `;
 
 export const SectionItem = styled.li`
-	width: 30%;
+	width: 100%;
 	height: 300px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
@@ -33,6 +39,7 @@ export const SectionItem = styled.li`
 	margin-bottom: 15px;
 
 	@media only screen and (min-width: 900px) {
+		width: 30%;
 		margin-bottom: 0px;
 	}	
 `;
