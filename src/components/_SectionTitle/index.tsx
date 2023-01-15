@@ -9,7 +9,7 @@ const Container = styled.div`
 
 const Title = styled.h2`
   color: #222222;
-  font-size: 3em;
+  font-size: 2.5em;
   line-height: 60px;
   font-weight: 500;
   margin-left: 30px;

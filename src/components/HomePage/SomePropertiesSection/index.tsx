@@ -1,4 +1,5 @@
 import { SectionTitle } from "../../_SectionTitle";
+import { SectionButton } from "../../_SectionButton";
 import {
   Container,
   SectionContainer,
@@ -96,6 +97,8 @@ export const SomePropertiesSection = () => {
                 <PropertyDetailsItemText>2 Vagas</PropertyDetailsItemText>
               </PropertyDetailsItem>
             </PropertyDetailsContainer>
+
+            <SectionButton>Procurar mais no explorador</SectionButton>
           </PropertyInfoContainer>
         </SectionContainerInfo>
 

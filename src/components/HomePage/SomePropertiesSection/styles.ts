@@ -96,6 +96,7 @@ export const PropertyLocation = styled.h4`
 
 export const PropertyDetailsContainer = styled.ul`
   display: flex;
+  margin-bottom: 20px;
 `;
 
 export const PropertyDetailsItem = styled.li`
