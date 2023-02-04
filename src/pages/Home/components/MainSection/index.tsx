@@ -14,7 +14,7 @@ import {
 
 import { MapPinLine, HouseLine, Money } from "phosphor-react";
 
-import MainImage from "../../../assets/main-section-image.png";
+import MainImage from "../../../../assets/main-section-image.png";
 
 export const MainSection = () => {
 	return (

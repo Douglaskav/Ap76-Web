@@ -11,6 +11,7 @@ export const SectionContainerInfo = styled.div`
   min-width: 40%;
   height: 100vh;
   margin: 30px;
+  margin-left: 60px;
 `;
 
 export const HeadCardContainer = styled.div`
@@ -76,12 +77,14 @@ export const LocationAndPriceContainer = styled.div`
 `;
 
 export const PropertyInfoContainer = styled.div`
+  width: 100%;
   margin-top: 30px;
 `;
 
 export const PropertyTitle = styled.h2`
   color: #333;
   font-size: 1.5em;
+  line-height: 36px;
   font-weight: 600;
 `;
 
@@ -113,6 +116,10 @@ export const PropertyDetailsItemText = styled.p`
   font-size: 0.75em;
   color: #44ab70;
   font-weight: 500;
+`;
+
+export const SearchInExplorerButtonContainer = styled.div`
+  width: 80%;
 `;
 
 export const CityLabel = styled.span`
