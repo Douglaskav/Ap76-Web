@@ -1,5 +1,5 @@
-import { SectionTitle } from "../../_SectionTitle";
-import { SectionButton } from "../../_SectionButton";
+import { SectionTitle } from "../../../../components/_SectionTitle";
+import { SectionButton } from "../../../../components/_SectionButton";
 import {
   Container,
   SectionContainer,
@@ -18,6 +18,7 @@ import {
   PropertyDetailsContainer,
   PropertyDetailsItem,
   PropertyDetailsItemText,
+  SearchInExplorerButtonContainer,
   CityLabel,
   PriceLabel,
   GreenPriceLabel,
@@ -35,8 +36,8 @@ import {
   Shower,
 } from "phosphor-react";
 
-import PropertyImage01 from "../../../assets/some-property-01.jpg";
-import PropertyImage02 from "../../../assets/some-property-02.jpg";
+import PropertyImage01 from "../../../../assets/some-property-01.jpg";
+import PropertyImage02 from "../../../../assets/some-property-02.jpg";
 
 export const SomePropertiesSection = () => {
   return (
@@ -71,7 +72,7 @@ export const SomePropertiesSection = () => {
 
           <PropertyInfoContainer>
             <PropertyTitle>
-              Apartamento para alugar com 3 quartos, 120m²
+              Apartamento para alugar com 3 quartos e dois banheiros, area de 120m²
             </PropertyTitle>
             
             <PropertyLocation>
@@ -98,7 +99,10 @@ export const SomePropertiesSection = () => {
               </PropertyDetailsItem>
             </PropertyDetailsContainer>
 
+            <SearchInExplorerButtonContainer>
             <SectionButton>Procurar mais no explorador</SectionButton>
+
+            </SearchInExplorerButtonContainer>
           </PropertyInfoContainer>
         </SectionContainerInfo>
 
