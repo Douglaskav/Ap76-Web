@@ -11,6 +11,20 @@ export const Container = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 80px;
+  padding-bottom: 40px;
+`;
+
+export const SquaresContainer = styled.div`
+  position: relative;
+  background-color: red;
+  width: 45%;
+`;
+
+export const SquareImage = styled.img`
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 `;
 
 export const InfoContainer = styled.div`
@@ -48,22 +62,44 @@ export const CardItemContainer = styled.div`
   background: #ffffff;
   box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.2);
   border-radius: 15px;
-  margin-bottom: 30px;
+  margin: 5%;
 
-  &:nth-child(2) {
-    margin-left: 45%;
-    margin-top: -20%;
+  @media only screen and (min-width: 1180px) {
+    &:nth-child(2) {
+      margin-top: -120px;
+    }
   }
-
-
- &:nth-child(3) {
-    margin-top: -20%;
-  }
-
 `;
 
-export const IconContainer = styled.div``;
+export const CardItemsRow = styled.div`
+  display: flex;
+  @media only screen and (max-width: 1180px) {
+    flex-direction: column;
+  }
+`;
 
-export const CardTitle = styled.h4``;
+export const IconContainer = styled.div`
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
 
-export const CardText = styled.p``;
+  background-color: #eafaf1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const CardTitle = styled.h4`
+  color: #333333;
+  font-size: 1.125em;
+  line-height: 21px;
+  font-weight: 600;
+  margin: 15px 0px 10px 0px;
+`;
+
+export const CardText = styled.p`
+  color: #aaaaaa;
+  font-size: 0.875em;
+  line-height: 19px;
+`;
