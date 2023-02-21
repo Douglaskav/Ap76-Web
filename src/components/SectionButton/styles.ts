@@ -5,7 +5,8 @@ export const Button = styled.button`
   min-height: 50px;
 
   background: transparent;
-  border: 2px solid #44AB70;
+  border: 2px solid #44ab70;
+  border-color: ${(props) => props.color};
   border-radius: 5px;
 
   width: 100%;
@@ -14,16 +15,16 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 
-  color: #44AB70;
-  font-size: .875em;
+  color: ${(props) => props.color};
+  font-size: 0.875em;
   font-weight: 600;
   line-height: 17px;
-  letter-spacing: .03em;
+  letter-spacing: 0.03em;
 
   &:hover {
-    background-color: #44AB70;
+    background-color: ${(props) => props.color};
     color: #ffffff;
   }
 `;

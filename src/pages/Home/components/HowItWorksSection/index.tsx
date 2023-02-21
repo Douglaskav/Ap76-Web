@@ -1,4 +1,4 @@
-import { SectionTitle } from "../../../../components/_SectionTitle";
+import { SectionTitle } from "../../../../components/SectionTitle";
 import {
 	Container,
 	NumberContainer,

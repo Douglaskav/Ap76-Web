@@ -1,5 +1,5 @@
-import { SectionTitle } from "../../../../components/_SectionTitle";
-import { SectionButton } from "../../../../components/_SectionButton";
+import { SectionTitle } from "../../../../components/SectionTitle";
+import { SectionButton } from "../../../../components/SectionButton";
 import {
   Container,
   SectionContainer,
@@ -15,9 +15,6 @@ import {
   PropertyInfoContainer,
   PropertyTitle,
   PropertyLocation,
-  PropertyDetailsContainer,
-  PropertyDetailsItem,
-  PropertyDetailsItemText,
   SearchInExplorerButtonContainer,
   CityLabel,
   PriceLabel,
@@ -26,16 +23,9 @@ import {
   PropertyImage,
 } from "./styles";
 
-import {
-  Car,
-  CaretLeft,
-  CaretRight,
-  HouseLine,
-  MapPin,
-  Ruler,
-  Shower,
-} from "phosphor-react";
+import { PropertyDetails } from "../../../../components/PropertyDetails";
 
+import { CaretLeft, CaretRight, MapPin } from "phosphor-react";
 import PropertyImage01 from "../../../../assets/some-property-01.jpg";
 import PropertyImage02 from "../../../../assets/some-property-02.jpg";
 
@@ -72,36 +62,19 @@ export const SomePropertiesSection = () => {
 
           <PropertyInfoContainer>
             <PropertyTitle>
-              Apartamento para alugar com 3 quartos e dois banheiros, area de 120m²
+              Apartamento para alugar com 3 quartos e dois banheiros, area de
+              120m²
             </PropertyTitle>
-            
+
             <PropertyLocation>
               <MapPin size={18} weight="duotone" /> Rua Inácio Luís da Costa,
               Parque São Domingos, São Paulo
             </PropertyLocation>
 
-            <PropertyDetailsContainer>
-              <PropertyDetailsItem>
-                <HouseLine size={18} color="#44AB70" weight="duotone" />
-                <PropertyDetailsItemText>3 Quartos</PropertyDetailsItemText>
-              </PropertyDetailsItem>
-              <PropertyDetailsItem>
-                <Shower size={18} color="#44AB70" weight="duotone" />
-                <PropertyDetailsItemText>2 Banheiros</PropertyDetailsItemText>
-              </PropertyDetailsItem>
-              <PropertyDetailsItem>
-                <Car size={18} color="#44AB70" weight="duotone" />
-                <PropertyDetailsItemText>2 Vagas</PropertyDetailsItemText>
-              </PropertyDetailsItem>
-              <PropertyDetailsItem>
-                <Ruler size={18} color="#44AB70" weight="duotone" />
-                <PropertyDetailsItemText>2 Vagas</PropertyDetailsItemText>
-              </PropertyDetailsItem>
-            </PropertyDetailsContainer>
+            <PropertyDetails bedrooms={4} bathrooms={3} spaces={3} area={200} />
 
             <SearchInExplorerButtonContainer>
-            <SectionButton>Procurar mais no explorador</SectionButton>
-
+              <SectionButton>Procurar mais no explorador</SectionButton>
             </SearchInExplorerButtonContainer>
           </PropertyInfoContainer>
         </SectionContainerInfo>
