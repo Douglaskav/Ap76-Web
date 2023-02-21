@@ -1,5 +1,5 @@
 import { Chat, Funnel, Shield } from "phosphor-react";
-import { SectionButton } from "../../../../components/_SectionButton";
+import { SectionButton } from "../../../../components/SectionButton";
 import {
   SectionContainer,
   Container,

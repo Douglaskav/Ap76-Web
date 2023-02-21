@@ -1,11 +1,12 @@
 import { Container } from "./styles";
 
-import { Header } from "../../components/_Header";
+import { Header } from "../../components/Header";
 import {
   MainSection,
   HowItWorksSection,
   SomePropertiesSection,
   WhyUsSection,
+  FeaturedProperties
 } from "./components";
 
 export const Home = () => {
@@ -16,6 +17,7 @@ export const Home = () => {
       <HowItWorksSection />
       <SomePropertiesSection />
       <WhyUsSection />
+      <FeaturedProperties />
     </Container>
   );
 };
