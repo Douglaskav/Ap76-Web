@@ -14,6 +14,7 @@ import {
   CardText,
   SquaresContainer,
   SquareImage,
+  SectionButtonContainer,
 } from "./styles";
 
 import SquaresImg from "../../../../assets/gray-blocks.png";
@@ -29,7 +30,9 @@ export const WhyUsSection = () => {
             tipográfica e de impressos, e vem sendo utilizado desde o século
             XVI.
           </Paragraph>
-          <SectionButton>Procurar mais no explorador</SectionButton>
+          <SectionButtonContainer>
+            <SectionButton>Procurar mais no explorador</SectionButton>
+          </SectionButtonContainer>
         </InfoContainer>
         <CardsContainer>
           <CardItemContainer>

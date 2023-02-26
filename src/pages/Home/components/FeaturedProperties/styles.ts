@@ -25,6 +25,15 @@ export const PropertyCard = styled.div`
   background: #ffffff;
   box-shadow: 0px 0px 30px rgba(51, 51, 51, 0.15);
   cursor: pointer;
+
+  @media only screen and (max-width: 1100px) {
+    width: 100%;
+    margin: 30px;
+  }
+
+  @media only screen and (max-width: 560px) {
+    width: 90%;
+  }
 `;
 
 export const PropertyHeader = styled.div`

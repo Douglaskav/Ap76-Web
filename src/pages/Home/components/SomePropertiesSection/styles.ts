@@ -5,6 +5,10 @@ export const Container = styled.div``;
 export const SectionContainer = styled.div`
   width: 100vw;
   display: flex;
+
+  @media only screen and (max-width: 560px) {
+    flex-direction: column;
+  }
 `;
 
 export const SectionContainerInfo = styled.div`
@@ -12,6 +16,10 @@ export const SectionContainerInfo = styled.div`
   height: 100vh;
   margin: 30px;
   margin-left: 60px;
+
+  @media only screen and (max-width: 560px) {
+    height: auto;
+  }
 `;
 
 export const HeadCardContainer = styled.div`
@@ -99,6 +107,10 @@ export const PropertyLocation = styled.h4`
 
 export const SearchInExplorerButtonContainer = styled.div`
   width: 80%;
+
+  @media only screen and (max-width: 560px) {
+    width: 100%;
+  }
 `;
 
 export const CityLabel = styled.span`

@@ -6,7 +6,8 @@ import {
   HowItWorksSection,
   SomePropertiesSection,
   WhyUsSection,
-  FeaturedProperties
+  FeaturedProperties,
+  TestemunhalsSection,
 } from "./components";
 
 export const Home = () => {
@@ -18,6 +19,7 @@ export const Home = () => {
       <SomePropertiesSection />
       <WhyUsSection />
       <FeaturedProperties />
+      <TestemunhalsSection />
     </Container>
   );
 };

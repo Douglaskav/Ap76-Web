@@ -1,23 +1,30 @@
 import styled from "styled-components";
 
 export const SectionContainer = styled.div`
-  width: 100vw;
   min-height: 600px;
   background-color: #3d4244;
 `;
 
 export const Container = styled.div`
+  max-width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 40px;
+
+  @media only screen and (max-width: 760px) {
+    flex-direction: column;
+  }
 `;
 
 export const SquaresContainer = styled.div`
   position: relative;
   background-color: red;
   width: 45%;
+  @media only screen and (max-width: 760px) {
+    display: none;
+  }
 `;
 
 export const SquareImage = styled.img`
@@ -30,8 +37,13 @@ export const SquareImage = styled.img`
 export const InfoContainer = styled.div`
   min-width: 30%;
   max-width: 30%;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin: 0px 60px;
+
+  @media only screen and (max-width: 760px) {
+    max-width: 90%;
+    margin: 0px 30px;
+    width: 90%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -49,10 +61,21 @@ export const Paragraph = styled.p`
   font-weight: 300;
 `;
 
+export const SectionButtonContainer = styled.div`
+  width: 100%;
+`;
+
 export const CardsContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 50%;
+
+  @media only screen and (max-width: 760px) {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+  }
 `;
 
 export const CardItemContainer = styled.div`
@@ -69,12 +92,25 @@ export const CardItemContainer = styled.div`
       margin-top: -120px;
     }
   }
+
+  @media only screen and (max-width: 760px) {
+    margin: 10px;
+    width: 70%;
+
+  }
+
+  @media only screen and (max-width: 460px) {
+    margin: 10px;
+    width: 80%;
+  }
 `;
 
 export const CardItemsRow = styled.div`
   display: flex;
   @media only screen and (max-width: 1180px) {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
