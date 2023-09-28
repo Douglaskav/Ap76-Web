@@ -1,5 +1,4 @@
 # Ap76
-![Ap76 Web Cover](Cover.jpg)
 
 ## About the project
 Ap76 is a real estate search application by region, in which the client has direct access to the owner of the property through our interactive chat, the main idea behind the project is to ease property negotiation.
